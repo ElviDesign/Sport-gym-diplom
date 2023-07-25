@@ -2,6 +2,9 @@ body {
   font-family: 'Montserrat', sans-serif;
   background-color: #FEFCFE;
 }
+h2 {
+  text-transform: lowercase;
+}
 
 .container{
   max-width: 1180px;
@@ -108,48 +111,100 @@ body {
 }
 /*Главный баннер*/
 
-.girl-bg {
-  display: block;
-  background-image: url(../files/@2x/girl.png);
-  background-size: cover;
-  width: 100%;
-  height: 100%;
-  background-position: center center;
+.banner-content {
+  padding: 220px 0 274px;
+  width: 57%;
+  position: relative;
 }
-
-
-.container {
-  max-width: 1180px;
-  margin: 0 auto;
-  padding-left: 15px;
-  padding-right: 15px;
+.banner-header {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 60px;
+  letter-spacing: 1.44px;
+  text-transform: uppercase;
+  color: #2B3541;
+  padding: 0;
+  margin: 0;
+  text-align: justify;
 }
-.content-title {
+.banner-dis {
+  font-weight: 400;
   font-size: 40px;
-  font-weight: 700;
+  line-height: 50px;
+  color: #2B3541;
+  margin: 43px 0 21px;
 }
+.banner-dis span:first-child {
+  padding-right: 10px;
+}
+.banner-bottom {
+  padding-left: 93px;
+  /* width: 50% */
+}
+.banner-text p{
+  width: 60%;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  color: #2B3541;
+  margin: 0 0 53px;    
+}
+.banner {
+  margin: 0 0 145px;
+  position: relative;
+  overflow: hidden;
+}
+.banner-button {
+  text-decoration: none;
+  background: #FBF138;
+  border: none;
+  padding: 20px 29px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #2B3541;
+  transition: 0.5s;
+}
+.banner-button:hover {
+  font-weight: 700;
+  background: #2B3541;
+  color: #FBF138;
+}
+.banner-arrow {
+  position: absolute;
+  bottom: 12px;
+  left: 0;
+}
+.banner-screen {
+  position: absolute;
+  top: 32px;
+  left: 329px;
+  width: 983px;
+  height: 810px;
+  z-index: 10;
+}
+.banner-rectangle {
+  background: linear-gradient(90deg, #FBF138 0%, rgba(253, 249, 182, 0.45) 145.23%);
+  opacity: 0.2;
+  width: 464px;
+  height: 850px;
+  position: absolute;
+  bottom: 15px;
+  right: -487px;
+  z-index: 1;
+}
+/*Главный баннер*/
 
-.tittle {
-  font-weight: 700;
-  font-size: 79px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-.description {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 15px;
-  line-height: 1.5;
-  color: #FAF9F9;
-  max-width: 320px;
-  margin: 20px auto -7px;
-}
-.banner-box {
-  background-image: url(../images/banner_1.jpg);
-  background-size: cover;
-  background-position: 0 center;
-  background-repeat: no-repeat;
-  padding: 100px 100px 120px;
-  margin-bottom: 80px;
+/*2 блок*/
+.menu-title {
+  text-transform: none;
+  weight: 700;
+  size: 40px;
+  line-height: 50px;
+  color: #2B3541;
 }
 .banner-link {
   font-weight: 700;
@@ -192,7 +247,7 @@ body {
 .banner-text {
   font-family: 'Montserrat', sans-serif;
   font-size: 15px;
-  color: #FAF9F9;
+  color:#2B3541;
   max-width: 311px;
   margin-bottom: 35px;
   margin-top: 0;
@@ -211,11 +266,11 @@ body {
   padding-bottom: 37px;
 }
 .menu-title {
+  text-transform: none; 
   font-style: normal;
   font-weight: 700;
-  font-size: 44px;
-  text-transform: uppercase;
-  color: #1B2A49;
+  font-size: 40px;
+  color: #2B3541;
   margin: 0;
 }
 .menu-select {
@@ -569,6 +624,7 @@ margin-top: 0;
   right: 20px;
   cursor: pointer;
 }
+
 
 /* Responsive */
 @media (min-width: 1001px) {
