@@ -2,9 +2,6 @@ body {
   font-family: 'Montserrat', sans-serif;
   background-color: #FEFCFE;
 }
-h2 {
-  text-transform: lowercase;
-}
 
 .container{
   max-width: 1180px;
@@ -109,8 +106,9 @@ h2 {
   transform: scale(1.2);
   opacity: 1;
 }
-/*Главный баннер*/
+/*иконка соцсети*/
 
+/*Главный баннер*/
 .banner-content {
   padding: 220px 0 274px;
   width: 57%;
@@ -139,8 +137,7 @@ h2 {
 }
 .banner-bottom {
   padding-left: 93px;
-  /* width: 50% */
-}
+ }
 .banner-text p{
   width: 60%;
   font-weight: 400;
@@ -194,11 +191,10 @@ h2 {
   position: absolute;
   bottom: 15px;
   right: -487px;
-  z-index: 1;
+  z-index: 1;  
 }
-/*Главный баннер*/
 
-/*2 блок*/
+
 .menu-title {
   text-transform: none;
   weight: 700;
@@ -255,16 +251,78 @@ h2 {
 }
 /*Главный баннер*/
 
+/*arrow*/
+.banner__arrow {
+  position: absolute;
+  bottom: 12px;
+  left: 0;
+}
+.banner__screen {
+  position: absolute;
+  top: 32px;
+  left: 329px;
+  width: 983px;
+  height: 810px;
+  z-index: 10;
+}
+.banner__rectangle {
+  background: linear-gradient(90deg, #FBF138 0%, rgba(253, 249, 182, 0.45) 145.23%);
+  opacity: 0.2;
+  width: 464px;
+  height: 850px;
+  position: absolute;
+  bottom: 15px;
+  right: -487px;
+  z-index: 1;
+}
+/*arrow*/
 
-.menu {
-  padding-top: 20px;
-}
-.menu-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding-bottom: 37px;
-}
+/*Близжайшие события*/
+h2 {
+  font-family: Montserrat;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 50px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #2B3541;
+  }
+  .events-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 600px; 
+    gap: 20px;
+    padding-top: 41px;
+    position: relative;
+  }
+  .pic-1 {
+    background-image: url(../files/@1x/maraphon.png);
+    width: 367.3219299316406px;
+    height: 600px;
+    top: 1209px;
+    left: 389px;
+  }
+  .pic-2 {
+    background-image: url(../files/@1x/Vebinar.png);
+    width: 367.3219299316406px;
+    height: 600px;
+    top: 1209px;
+    left: 389px;
+  }
+  .pic-3 {
+    background-image: url(../files/@1x/yoga.jpg);
+    width: 367.3219299316406px;
+    height: 600px;
+    top: 1209px;
+    left: 389px;
+  }
+  
+  
+  /*Близжайшие события*/
+
+
+
+
 .menu-title {
   text-transform: none; 
   font-style: normal;
@@ -448,6 +506,9 @@ margin-top: 0;
 .button-up.visible {
   opacity: 1;
 }
+
+
+
 /* Style INDEX-SPORT */
 /*
 .main {
