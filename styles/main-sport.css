@@ -64,17 +64,17 @@ body {
   height: 1px;
   background-color: #443737;
   position: absolute;
-  left: 0; bottom:-10px;
+  left: 0;
+  bottom:-10px;
   transform: scaleX(0);
   transform-origin: left;
-  transition: transform 0.25s;
 }
  /*иконка соцсети*/
 .icon-social {
   display: flex;
   list-style-type: none;
   padding-left: 0;
-  right: ;
+  right: 0;
 }
 
 .icon-scale-1 a {
@@ -184,7 +184,6 @@ body {
   left: 329px;
   width: 983px;
   height: 810px;
-  z-index: 10;
 }
 .banner-rectangle {
   background: linear-gradient(90deg, #FBF138 0%, rgba(253, 249, 182, 0.45) 145.23%);
@@ -196,11 +195,9 @@ body {
   right: -487px;
   z-index: 1;  
 }
-
-
 .menu-title {
   text-transform: none;
-  weight: 700;
+  font-weight: 700;
   size: 40px;
   line-height: 50px;
   color: #2B3541;
@@ -214,7 +211,7 @@ body {
   color: #1E2F40;
   font-weight: bold;  
   background-color: #FBF138;  
-  border: 1px solid #FBF138
+  border: 1px solid #FBF138;
   transition: 0.5s;
 }
 .banner-link:hover {
@@ -417,18 +414,12 @@ h2 {
 /*РАсписание тренировок*/
 
 /*обратная связь*/
-.subscribe-button {
- 
-}
 .form-control {
   padding: 19px 250px 19px 19px;
-  border: none;
-  
-    
+  border: none;    
 }
 .form {
-  text-align: center;
-  
+  text-align: center;  
 }
 .subscription {
   background-color: #F3F3F3;
