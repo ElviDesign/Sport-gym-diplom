@@ -396,23 +396,11 @@ h2 {
   gap: 20px;
 }
 .schedule-item {
-  border: 1px solid #2B3541;
-  padding: 20px 30px;
+  border: 1px solid #727880;  
+  box-sizing: border-box
 }
 .schedule-title {
-  font-weight: 700;
-  font-size: 18px;
-  padding-top: 40px;
-  padding-bottom: 20px;
-  color: #2B3541;
-}
-.schedule-time {
-  font-weight: 400;
-  font-size: 18px;
-  color: #010101;
-  padding: 114px 186px;
-  padding-top: 0;
-  padding-right: 0;  
+  bottom: 0;
 }
 /*РАсписание тренировок*/
 
@@ -454,6 +442,74 @@ h2 {
 /*обратная связь*/
 
 /*чекбокс*/
+.checkbox:checked,
+.checkbox:not(:checked){
+   position: absolute;
+   left:-9999px;
+}
+.checkbox:checked + label,
+.checkbox:not(:checked) + label{
+   position: relative;
+   padding-left: 35px;
+   cursor:pointer;
+}
+/* Стили для псевдоэлемента before с фоном и обводкой, когда пункт активен */
+.checkbox:checked + label::before{
+   content:'';
+   position: absolute;
+   width: 16px;
+   height: 16px;
+   left:0;
+   top:calc(50% - 10px);
+   background-color: #2B3541;
+   border-radius: 2px;
+   border: 2px solid #2B3541;
+}
+/* Стили для псевдоэлемента after с изображением, когда пункт активен */
+.checkbox:checked + label::after{
+   content:'';
+   position: absolute;
+   width: 12px;
+   height: 12px;
+   transition: all .2s ease;
+   opacity: 1;
+   left: 4px;
+   top: calc(50% - 6px);
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/White_check.svg/2048px-White_check.svg.png);
+}
+/* Стили для псевдоэлемента before с фоном и обводкой, когда пункт НЕ активен */
+.checkbox:not(:checked) + label::before{
+   content:'';
+   position: absolute;
+   width: 16px;
+   height: 16px;
+   left:0;
+   top:calc(50% - 10px);
+   background-color: transparent;
+   border-radius: 2px;
+   border: 2px solid #2B3541;
+}
+/* Стили для псевдоэлемента after с изображением, когда пункт НЕ активен */
+.checkbox:not(:checked) + label::after{
+   content:'';
+   position: absolute;
+   width: 12px;
+   height: 12px;
+   transition: all .2s ease;
+   opacity: 0;
+   left: 4px;
+   top: calc(50% - 6px);
+   background-position: 0 -12px;
+   background-color: transparent;
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/White_check.svg/2048px-White_check.svg.png);
+}
+.radio:checked + label::before{
+   border-radius: 100%;
+}
 
 /*чекбокс*/
 
@@ -480,6 +536,11 @@ h2 {
   font-size: 18px;
   line-height: 27px;
 }
+.about-item p {
+  color: #2B3541;
+  opacity: 60%;
+}
+
 .about-banner-img {   
     margin-left: -11px;   
     width: 50%;
@@ -494,6 +555,7 @@ h2 {
   line-height: 27px;
   color: #2B3541;
   margin-bottom: 56px;
+  
 }
 .about-btn{
   
