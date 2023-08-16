@@ -393,11 +393,23 @@ h2 {
 .schedule-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 284px);  
   gap: 20px;
 }
 .schedule-item {
-  border: 1px solid #727880;  
-  box-sizing: border-box;
+  border: 1px solid #727880; 
+  padding: 20px 30px;
+}
+.icon-title { 
+  display: flex; 
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 40px;
+}
+.schedule-time {
+  text-align: end;  
+}
+.schedule-title {
 }
 
 /*РАсписание тренировок*/
