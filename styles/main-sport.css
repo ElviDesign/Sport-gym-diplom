@@ -447,7 +447,7 @@ h2 {
 .schedule-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 284px);  
+  grid-template-rows: repeat(2, 284px); 
   gap: 20px;
 }
 .schedule-item {
