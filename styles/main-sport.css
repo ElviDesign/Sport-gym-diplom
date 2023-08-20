@@ -521,8 +521,7 @@ h2 {
   margin-bottom: 30px;
 }
 .h2-form {
-margin-top: 50px;
-margin-top: 50px;
+  margin-top: 50px;
   
 }
 .form-control {
@@ -556,7 +555,6 @@ margin-top: 50px;
   display: inline-block;
   z-index: 10;
   position: relative;
-  margin-bottom: 0;
 }
 .agree-ment {
   margin-top: 10px;
@@ -569,6 +567,14 @@ margin-top: 50px;
 }
 .label {
   font-size: 11px;
+  text-decoration: none;
+  color: rgba(43, 53, 65, 1);
+
+}
+.label a {
+  color: rgba(43, 53, 65, 1);
+  text-decoration: underline;
+
 }
 .checkbox:checked,
 .checkbox:not(:checked){
@@ -731,8 +737,10 @@ margin-top: 50px;
   margin-top: -5px;
 }
 a, u {
-  text-decoration: none;
+  text-decoration: none;  
 }
+
+
 .footer-nav {
   flex-basis: 55.5%;
   display: flex;
@@ -748,6 +756,7 @@ a, u {
   font-size: 14px;
   line-height: 21px;
   color: #2B3541;
+
 }
 footer ul .nav-link::after {
   content: '';
