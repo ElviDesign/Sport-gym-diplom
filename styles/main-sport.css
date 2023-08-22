@@ -464,6 +464,7 @@ h2 {
   flex-direction: column;
   justify-content: flex-end;
   gap: 40px;
+  border: none;
 }
 .schedule-time {
   text-align: end;  
