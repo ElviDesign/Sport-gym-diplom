@@ -449,7 +449,7 @@ h2 {
 .schedule-grid {
   display: grid;  
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 309px 56px 274px;
+  grid-template-rows: 309px 73px 281px;
   gap: 20px;
 }
 .schedule-item {
@@ -807,7 +807,7 @@ footer ul .nav-link:hover::after {
   border-radius: 50%;
   z-index: 1;
 }
-.footer-social_media {
+.footer-social-media {
   flex: 0 0 86px;
   display: flex;
   justify-content: space-between;
