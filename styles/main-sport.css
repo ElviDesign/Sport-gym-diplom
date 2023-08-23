@@ -449,7 +449,7 @@ h2 {
 .schedule-grid {
   display: grid;  
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-rows: 309px 56px 274px;
   gap: 20px;
 }
 .schedule-item {
@@ -473,11 +473,11 @@ h2 {
 }
 .schedule-item:nth-child(4) {
   grid-column: 1 / 2;
-  grid-row: 2 / 3;
+  grid-row: 2 / 4;
 }
 .schedule-item:nth-child(5) {
   grid-column: 2 / 3;
-  grid-row: 2 / 3;
+  grid-row: 3 / 4;
 }
 .schedule-item:nth-child(6) {
   grid-column: 3 / 4;
@@ -662,8 +662,9 @@ h2 {
   width: 100%;
 }
 .about-add {
+  max-width: 1140px;
   margin-top: 80px;
-  gap: 111px;
+  gap: 85px;
 }
 .about-banner {
 }
@@ -784,7 +785,9 @@ footer ul .nav-link:hover::after {
   color: #2B3541;
   display: inline-block;
   z-index: 10;
-  position: relative;
+  position: relative;  
+  margin-right: 5px;
+  gap: 5px;
 }
 .contacts {
   flex: 0 0 295px;
