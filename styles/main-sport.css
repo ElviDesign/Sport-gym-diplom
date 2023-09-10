@@ -200,7 +200,7 @@ body {
   width: 464px;
   height: 836px;
   position: absolute;
-  bottom: 72px;
+  bottom: 14px;
   right: -487px;
   z-index: 1;
 }
@@ -676,6 +676,7 @@ input[type="email"]:invalid {
 .about-add {
   max-width: 1140px;
   margin-top: 80px;
+  display: flex;
   gap: 85px;
 }
 
@@ -713,6 +714,9 @@ input[type="email"]:invalid {
 .about-add,
 .about-banner {
   display: flex;
+}
+.about-add {
+
 }
 .btn {
   font-weight: 700;
@@ -955,11 +959,18 @@ footer ul .nav-link:hover::after {
   margin-bottom: -16px;
 }
 /*баннер девушка*/
+.about-add {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);  
+  row-gap: 43px;
+  justify-content: start;
+}
 }
 @media(min-width: 1140px) {
   .header-burger {
       display: none;
   }
+
 }
 @media(max-width: 1000px) {
     /*близжайшие события*/
@@ -967,7 +978,7 @@ footer ul .nav-link:hover::after {
       background-image: url(../files/@2x/yoga-3.png);
 }
   .events-title {
-    font-size: 26px;
+    font-size: 40px;
     margin-top: -20px;
 }
 .events-grid {
@@ -1155,7 +1166,7 @@ height: 26px;
 .banner-text {
   width: 80%;
 }
-}
+
 .banner-header {
   position: relative;
   z-index: 10;
@@ -1163,9 +1174,30 @@ height: 26px;
 .banner-text {
   width: 80%;
 }
+.schedule-grid {
+  display: flex;
+  flex-direction: column;
+}
+.events-title {
+  font-size: 26px;
+  margin-top: -20px;
+}
+.h2 {
+    font-size: 26px;
+    line-height: 31.69px;
+}
+.schedule-date {
+  padding-top: 13px;
+  right: 0;
+  font-weight: 700;
+  font-size: 16px;
+  color: #2B3541;
+}
+}
+
 
 @media(max-width: 550px) {
-  /* --- main --- */
+  /* главный баннер*/
 .container {
   max-width: 360px;
 }
@@ -1189,7 +1221,6 @@ height: 26px;
     letter-spacing: 0.023em;
     text-transform: uppercase;
     color: #2B3541;
-    
 }
 .banner-subheader {
     margin-bottom: 16px;
@@ -1224,7 +1255,16 @@ height: 26px;
 .banner-arrow img{
     display: none;
 }
+/*главный баннер*/
+
+/*расписание тренировок*/
+
+/*расписание тренировок*/
+.about-add {
+  grid-template-columns: repeat(1, 1fr);
 }
+}
+
 
 @media (max-width: 340px){
 
