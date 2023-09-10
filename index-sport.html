@@ -23,20 +23,18 @@
       <header id="headerTop">
         <div class="container">
           <div class="header">
+            <a href="#" class="logo-header"></a>                      
             <div class="header-burger">
               <button class="burger" onclick="openModal()"></button>
-            </div>            
-            <div class="header-item">
-              <a href="index-sport.html" alt="logo-header.svg" class="logo-header"></a>
+            </div>
                 <nav>
                   <ul class="header-nav">
                     <li><a href="#" class="menu-link">Мероприятия</a></li>
                     <li><a href="#" class="menu-link">Расписание</a></li>
                     <li><a href="#" class="menu-link">О компании</a></li>
                   </ul>
-                </nav>
-            </div>
-               <ul class="icon-social">
+                </nav>         
+            <ul class="icon-social">
                   <li class="icon-scale-1">
                       <a href="#" target="IN"></a>
                   </li>
@@ -46,73 +44,72 @@
               </ul>
           </div>
         </div>
-      </р>
    </header>
-   <main class="banner">     
+   <main class="banner">      
     <div class="container">
         <div class="banner-content">
-            <img src="files/@1x/girl.png" alt="Image 1 screen" class="banner-screen">
-            <h1 class="banner-header">онлайн&nbsp;тренировки<br>любой&nbsp;сложности</h1>
-            <p class="banner-dis">
-                <span>&gt;&nbsp;15</span>&nbsp;<span>тренировок</span>
-            </p>
-            <div class="banner-bottom">
-                <p class="banner-text">в&nbsp;области&nbsp;спортивной<br>физиологии&nbsp;и&nbsp;нутрициологии</p>
-                <a href="#" class="banner-button">Узнать подробнее</a>
-            </div>
-            <div class="banner-rectangle"></div>
+            <img src="files/@1x/girl.png" alt="run girl" class="banner-screen">
+               <h1 class="banner-header">онлайн&nbsp;тренировки<br>любой&nbsp;сложности</h1>
+                <p class="banner-subheader">
+                    &gt;&nbsp;15&nbsp;тренировок
+                </p>
+                <div class="banner-bottom">
+                    <p class="banner-text">в&nbsp;области&nbsp;спортивной<br>физиологии&nbsp;и&nbsp;нутрициологии</p>
+                    <a href="#" class="banner-button">узнать&nbsp;подробнее</a>
+                </div>
+                <div class="banner-rectangle"></div>
             <a href="#schedule" class="banner-arrow">
-                <img src="images/icons/Arrow.svg" alt="Arrow.svg">
-            </a>
+                <img src="images/icons/arrow.svg" alt="banner-arrow">
+            </a>                 
         </div>
     </div>
+    <div class="banner-image">
+        <div class="rectangle"></div>    
+    </div>
 </main>
-<section class="events" id="events">
-  <div class="container">
-      <h2 class="h2">Ближайшие события</h2>
-      <div class="events-grid">
-          <div class="events-item">
-              <div class="events-cover pic-1">
-                  <div class="events-table">
-                      <p class="event-date">29.06 – 4.07</p>
-                      <p class="event-name">Марафон выносливости</p>
-                  </div>
-                  <div class="event-hover">
-                      <button class="event-join">записаться</button>
-                  </div>
-                  <div class="event-button">марафон</div>
-                  <a href="#" class="events-add"><img src="img/icons/add.svg" alt="add"></a>
-              </div>
-          </div>
-          <div class="events-item">
-              <div class="events-cover pic-2">
-                  <div class="events-table">
-                      <p class="event-date">9.07</p>
-                      <p class="event-name">Как&nbsp;стать<br>тренером?</p>
-                  </div>
-                  <div class="event-hover">
-                      <button class="event-join">записаться</button>
-                  </div>
-                  <div class="event-button">вебинар</div>
-                  <a href="#" class="events-add"><img src="img/icons/add.svg" alt="add"></a>
-              </div>
-          </div>
-          <div class="events-item">
-              <div class="events-cover pic-3">
-                  <div class="events-table">
-                      <p class="event-date">15.07</p>
-                      <p class="event-name">Йога, как стиль жизни</p>
-                  </div>
-                  <div class="event-hover">
-                      <button class="event-join">записаться</button>
-                  </div>
-                  <div class="event-button">вебинар</div>
-                  <a href="#" class="events-add"><img src="img/icons/add.svg" alt="add"></a>
-              </div>
-          </div>
-      </div>
-  </div>
-</section>
+<section class="events" id="clubevents">
+    <div class="container">
+        <h2 class="events-title">
+            Ближайшие события
+        </h2>
+        <div class="events-grid">
+            <div class="events-grid-item">
+                <div class="events-item-cover marathon">
+                    <div class="gradient">
+                        <p class="date">29.06 - 4.07</p>
+                        <h2 class="grid-title">Марафон выносливости</h2>
+                    </div>
+                        <button class="events-grid-hover-button">записаться</button>
+                    <div class="events-grid-button">марафон</div>
+                    <a href="#" class="events-grid-add"><img src="images/icons/add.svg" alt=""></a>
+                </div>
+            </div>
+            <div class="events-grid-item">
+                <div class="events-item-cover vebinar">
+                    <div class="gradient">
+                        <p class="date">9.07</p>
+                        <h2 class="grid-title">Как стать тренером?</h2>
+                    </div>
+                        <button href="#" class="events-grid-hover-button">записаться</button>
+                    <div class="events-grid-button">вебинар</div>
+                    <a href="#" class="events-grid-add"><img src="images/icons/add.svg" alt=""></a>
+                </div>  
+            </div>
+            <div class="events-grid-item">
+                <div class="events-item-cover yoga">
+                    <div class="gradient">
+                        <p class="date">15.07</p>
+                        <h2 class="grid-title">Йога как стиль жизни</h2>
+                    </div>
+                        <button href="#" class="events-grid-hover-button">записаться</button>
+                    <div class="events-grid-button">вебинар</div>
+                    <a href="#" class="events-grid-add">
+                        <img src="images/icons/add.svg" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </div>
+   </section>
 <section class="schedule" id="schedule">
   <div class="container">
       <div class="schedule-header">
@@ -166,25 +163,24 @@
       </div>
   </div>
 </section>
+
 <section class="subscription" id="subscription">
     <div class="container">
-      <div class="h2-form">
-        <div class="h2-subscription">
-            <div class="subscription-circle">
-
-            </div>
-            <h2 class="h2">Подпишитесь на рассылку</h2>
-        </div>        
-        <form action="" class="form">
-            <input type="email" class="form-control" id="InputEmailForm" aria-describedby="emailHelp" placeholder="Ваш e-mail">
-            <button href="#" class="subscribe-button btn">подписаться</button>
-            <div class="agree-ment">
-                <input type="checkbox" id="01" class="checkbox">
-                <label for="01" class="label">Согласен с обработкой <a href="https://annblok.ru/workshop" target="-blank">персональных данных</a></label>
-            </div>   
-        </form>
-     </div>
-</div>
+        <div class="mail-box">
+            <h2 class="subscription-title">Подпишитесь на&nbsp;рассылку</h2>
+            <form class="subscription-form">
+                <div class="email-plus-checkbox">
+                    <input class="input" type="email" placeholder="Ваш e-mail">
+                    <div class="subscription-agreement">
+                        <input type="checkbox" class="custom-checkbox" id="agreementCheckbox">
+                        <label for="agreementCheckbox"></label>
+                        <p class="agreement-text">Согласен с обработкой <a href="#" class="persona-data">персональных данных</a></p>
+                    </div>
+                </div>
+                <button type="submit" class="subscription-btn">подписаться</button>
+            </form>
+        </div> 
+    </div> 
 </section>
 <section class="about" id="about">
     <div class="container">
