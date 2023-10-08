@@ -479,7 +479,7 @@ input[type="email"]:invalid {
   color: #2B3541;
   align-items: center;
   text-decoration: none;
-  -webkit-appearance: none;
+  appearance: none;
   height: 65px;
   display: flex;
   justify-content: center;
@@ -704,9 +704,6 @@ input[type="email"]:invalid {
 .nav-link .logo-header {
   margin-top: -5px;
 }
-a, u {
-  /*text-decoration: none;  */
-}
 .footer-nav {
   flex-basis: 55.5%;
   display: flex;
@@ -872,8 +869,6 @@ footer ul .nav-link:hover::after {
   justify-content: space-between;    
   padding: 0;
 }
-.logo-header {
-} 
 /*баннер девушка*/
 .banner {
   margin: 0 0 84px;
@@ -1276,9 +1271,6 @@ input[type="email"] {
 }
 @media(max-width: 550px) {
   /* главный баннер*/
-.container {
- 
-}
 .banner {
     margin: 0 0 122px;
 }
