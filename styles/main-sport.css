@@ -2,6 +2,9 @@ body {
   font-family: 'Montserrat', sans-serif;
   background-color: #FEFCFE;
 }
+ul {
+  padding-left: 0;
+}
 .container{
   max-width: 1140px;
   margin: 0 auto;
@@ -819,17 +822,24 @@ footer ul .nav-link:hover::after {
   
 /*футер*/
 /*АДАПТИВ*/
+@media(max-width: 1500px) {
+  .banner-screen {
+    left: 204px;
+}
+}
 @media(max-width: 1250px) {
   .banner-screen {
     position: absolute;
     top: 32px;
-    left: 238px;
-    width: 983px;
-    height: 810px;
+    left: 290px;
+    width: 770px;
+    height: 659px;
     z-index: 10;
 }
+
  }
 @media(max-width: 1140px) {
+ 
 .text {
   margin-left: 0;
 }
@@ -952,7 +962,7 @@ footer ul .nav-link:hover::after {
     grid-template-rows: 309px 336px;
     row-gap: 10px;
     column-gap: 20px;
-    column-gap: 20px;
+    column-gap: 10px;
     padding-top: 0px;
     
 }
@@ -1196,6 +1206,7 @@ input[type="email"] {
   gap: 36px;
 }
 .footer-nav ul {
+  padding-left: 0;
   width: 100%;
 }
 .contacts {
