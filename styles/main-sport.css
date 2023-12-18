@@ -84,7 +84,7 @@ ul {
 
 .icon-scale-1 a {
   margin-top: -5px;
-  margin-left: 30px;
+  margin-left: 56px;
   display: block;
   background-image: url(../images/icons/IN.svg);
   background-size: cover;
@@ -327,6 +327,31 @@ ul {
   display: none;
 }
 /*Расписание тренировок*/
+.jump {
+  height: 107px;
+  width: 67px;
+}
+.dumbell {
+  height: 50px;
+  width: 91px;
+}
+.bottle {
+  width: 42px;
+  height: 85px;
+}
+.body {
+  height: 65px;
+  width: 65px;
+}
+.heart {
+  width: 65px;
+  height: 61px;
+}
+.kettlebell {
+  width: 58px;
+  height: 66px;
+}
+
 .schedule-header {
   display: flex;
   justify-content: space-between;  
@@ -674,7 +699,7 @@ input[type="email"]:invalid {
 .about-banner {
   display: flex;
   justify-content: space-between;
-  gap: 50px;
+  gap: 84px;
 }
 .btn {
   font-weight: 700;
@@ -824,7 +849,7 @@ footer ul .nav-link:hover::after {
 /*АДАПТИВ*/
 @media(max-width: 1500px) {
   .banner-screen {
-    left: 204px;
+    left: 268px;
 }
 }
 @media(max-width: 1250px) {
@@ -905,7 +930,7 @@ footer ul .nav-link:hover::after {
   width: 399px;
   height: 324px;
   top: 79px;
-  left: 47%;
+  left: 50%;
   transform: scale(1.2);
 }
 .banner-bottom {
@@ -1010,7 +1035,7 @@ display: none;
 /*Расписание тренировок*/
 .schedule-title {
   font-size: 18px;
-  margin-top: -21px;
+  margin-top: 0;
   width: 207px;
 }
 .training-dates {
@@ -1264,6 +1289,47 @@ input[type="email"] {
     font-size: 26px;
     line-height: 31.69px;
 }
+.icon-title {
+  display: flex;
+  flex-direction: row;
+  margin-left: 0;
+  justify-content: left;
+}
+.schedule-title {
+width: 300px;
+padding-bottom: 8px;
+}
+.jump {
+  height: 53px;
+    width: 34px;
+    margin-right: 10px;
+}
+.dumbell {
+  height: 25px;
+    width: 46px;
+    margin-right: -3px;
+}
+.bottle {
+  width: 23px;
+    height: 45px;
+    margin-right: 20px;
+}
+.body {
+  height: 39px;
+    width: 39px;
+    margin-right: 1px;
+}
+.heart {
+  width: 39px;
+    height: 37px;
+    margin-right: 2px;
+}
+.kettlebell {
+  width: 35px;
+  height: 40px;
+  margin-right: 8px;
+}
+
 .schedule-date {
   padding-top: 13px;
   right: 0;
